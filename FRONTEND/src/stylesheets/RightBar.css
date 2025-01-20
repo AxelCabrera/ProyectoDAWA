@@ -1,0 +1,95 @@
+.right-bar {
+    flex: 3;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    font-size: 14px;
+}
+
+&::-webkit-scrollbar {
+    display: none;
+}
+
+.container-right-bar {
+    padding: 20px;
+}
+
+.item-rightbar-suggestion {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.span-right-bar-suggestion {
+    color: grey;
+}
+
+.span-right-bar-name {
+    font-weight: 500;
+    color: black;
+    align-items: center;
+}
+
+.span-hora {
+    font-size: 12px;
+    color: gray;
+}
+
+.p-right-bar {
+    color: gray;
+}
+
+.user-right-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.user-info-right-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+.img-right-bar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.online-right-bar {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.btn-right-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-right-bar-seguir {
+    border: none;
+    background-color: #5271ff;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-right-bar-seguir:hover {
+    transform: scale(1.05);
+}

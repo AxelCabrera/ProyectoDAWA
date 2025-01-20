@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #bcefff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 600px;
+    min-width: 850px;
+    overflow: hidden;
+}
+
+.left-login {
+    flex: 1;
+    background: linear-gradient(hsla(213, 74%, 25%, 0.700), hsla(213, 74%, 25%, 0.700)),
+        url("https://lh3.googleusercontent.com/p/AF1QipNMChxIUiKdAw_UuHrVnNeDjo1cfff5neIfyjQZ=s680-w680-h510") center;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.title-login {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.left-span {
+    font-size: 14px;
+}
+
+.btn-register {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: #113C70;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-login {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #113C70;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
+}
+
+.btn-register:hover {
+    transform: scale(1.05);
+}
+
+.right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.login-ug-logo {
+    display: flex;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.right-title {
+    display: flex;
+    justify-content: center;
+    color: #555;
+}
+
+p {
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+}

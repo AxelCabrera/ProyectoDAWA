@@ -1,0 +1,66 @@
+.container-post-int {
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+.user-post-int {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info-post-int {
+    display: flex;
+    gap: 20px;
+}
+
+.img-post-int {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.detalle-post-int {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-post-int {
+    font-weight: 500;
+    color: darkblue;
+}
+
+.fecha-post-int {
+    font-size: 12px;
+}
+
+.content-post-int {
+    margin: 20px 0px;
+}
+
+.img-content-post-int {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.info-post-int {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-post-int {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}

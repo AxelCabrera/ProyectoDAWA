@@ -1,0 +1,67 @@
+.leftBar {
+    flex: 2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+
+}
+
+.container {
+    padding: 20px;
+
+}
+
+.hr-left-bar {
+    margin: 20px 0px;
+    height: 0.5px;
+    border: none;
+    background-color: lightgray;
+}
+
+.menu-one,
+.menu-two,
+.menu-three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-leftbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-user {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-one,
+.item-two,
+.item-three {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.img-one,
+.img-two,
+.img-three {
+    width: 30px;
+}
+
+.span-titles {
+    font-size: 12px;
+}
+
+.span-one,
+.span-two,
+.span-three,
+.span-user {
+    font-size: 14px;
+}
