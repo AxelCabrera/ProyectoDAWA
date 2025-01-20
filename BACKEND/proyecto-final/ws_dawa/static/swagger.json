@@ -1,0 +1,420 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Documentación  de Servicios Web de DAWA",
+    "version": "1.0.0",
+    "title": "Documentación  de DAWA",
+    "termsOfService": "Leer wwww.ug.edu.com",
+    "contact": {
+      "email": "juan.cedenor@ug.edu.ec"
+    },
+    "license": {
+      "name": "Dawa UG",
+      "url": "none"
+    }
+  },
+  "tags": [
+    {
+      "name": "WS Security",
+      "description": "WS Security"
+    }
+  ],
+  "paths": {
+    "/security/login": {
+      "post": {
+        "tags": [
+          "WS Security"
+        ],
+        "summary": "Login de Usuario",
+        "description": "Login de Usuario",
+        "operationId": "loginUser",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/loginUserDef"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "500": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/register/user": {
+      "post": {
+        "tags": [
+          "WS Register"
+        ],
+        "summary": "Registro de Usuario",
+        "description": "Registro de Usuario",
+        "operationId": "RegisterUser",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/registerUserDef"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "500": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/user/list": {
+      "get": {
+        "tags": [
+          "WS Security"
+        ],
+        "summary": "Lista de Usuarios",
+        "description": "Lista de Usuarios",
+        "operationId": "userList",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "tokenapp",
+            "description": "Token para aplicación",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "500": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/comment/list": {
+      "get": {
+        "tags": [
+          "WS Security"
+        ],
+        "summary": "Lista de Comentarios",
+        "description": "Lista de Comentarios",
+        "operationId": "commentsList",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "tokenapp",
+            "description": "Token para aplicación",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "500": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/message/list": {
+      "get": {
+        "tags": [
+          "WS Security"
+        ],
+        "summary": "Lista de Mensajes",
+        "description": "Lista de Mensajes",
+        "operationId": "messagesList",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "tokenapp",
+            "description": "Token para aplicación",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "500": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/notification/list": {
+      "get": {
+        "tags": [
+          "WS Security"
+        ],
+        "summary": "Lista de Notificaciones",
+        "description": "Lista de Notificaciones",
+        "operationId": "notificationList",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "tokenapp",
+            "description": "Token para aplicación",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "500": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/posts/list": {
+      "get": {
+        "tags": [
+          "WS Security"
+        ],
+        "summary": "Lista de Posts",
+        "description": "Lista de Posts",
+        "operationId": "postsLists",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "tokenapp",
+            "description": "Token para aplicación",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "500": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+   "loginUserDef": {
+     "type": "object",
+     "properties": {
+       "login_user": {
+         "type": "string",
+         "format": "string"
+       },
+       "login_password": {
+         "type": "string",
+         "format": "string"
+       }
+     }
+    },
+    "registerUserDef": {
+     "type": "object",
+     "properties": {
+       "register_user": {
+         "type": "string",
+         "format": "string"
+       },
+       "register_mail": {
+         "type": "string",
+         "format": "string"
+       },
+       "register_password": {
+         "type": "string",
+         "format": "string"
+       }
+     }
+    },
+   "NotFound": {
+      "type": "object",
+      "properties": {
+        "success": {
+            "type": "boolean",
+            "default": false
+        },
+        "message": {
+            "type": "string",
+            "example": "Recurso no encontrado"
+        },
+        "data": {
+          "type": "string",
+          "example": "{}"
+        },
+        "status": {
+          "type": "string",
+          "example": "404"
+        }
+      }
+    },
+   "ErrorResponse": {
+      "type": "object",
+      "properties": {
+        "success": {
+            "type": "boolean",
+            "default": false
+        },
+        "message": {
+            "type": "string"
+        },
+        "data": {
+          "type": "string",
+          "example": "{}"
+        },
+        "status": {
+          "type": "string",
+          "example": "500"
+        }
+      }
+    },
+   "Response": {
+      "type": "object",
+      "properties": {
+        "success": {
+            "type": "boolean",
+            "default": false
+        },
+        "message": {
+            "type": "string",
+            "example": "ok"
+        },
+        "data": {
+          "type": "string",
+          "example": "{}"
+        },
+        "status": {
+          "type": "string",
+          "example": "200"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

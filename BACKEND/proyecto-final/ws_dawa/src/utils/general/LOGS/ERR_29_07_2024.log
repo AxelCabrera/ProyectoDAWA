@@ -1,0 +1,4 @@
+22:45:19 - ERR - getRecords - (OperationalError('connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n'),)
+22:45:19 - ERR - Login - (UnboundLocalError("local variable 'cursor' referenced before assignment"),)
+22:50:22 - ERR - getRecords - (OperationalError('connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n'),)
+22:52:56 - ERR - getRecords - (OperationalError('connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n'),)

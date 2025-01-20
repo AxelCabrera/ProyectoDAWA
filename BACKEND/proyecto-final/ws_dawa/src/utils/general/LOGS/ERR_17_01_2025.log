@@ -1,0 +1,2 @@
+14:33:59 - ERR - getRecords - (InsufficientPrivilege('permiso denegado a la tabla messages\n'),)
+14:44:35 - ERR - getRecords - (InsufficientPrivilege('permiso denegado a la tabla notifications\n'),)

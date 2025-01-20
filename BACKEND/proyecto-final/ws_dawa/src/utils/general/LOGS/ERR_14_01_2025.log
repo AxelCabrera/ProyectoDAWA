@@ -1,0 +1,5 @@
+19:06:43 - ERR - getRecords - (UndefinedTable("no existe la relación «dawa.user»\nLINE 1: SELECT count(*) as valor FROM dawa.user WHERE email = 'strin...\n                                      ^\n"),)
+19:08:05 - ERR - getRecords - (InsufficientPrivilege('permiso denegado a la tabla users\n'),)
+19:10:20 - ERR - Login - (TypeError('list indices must be integers or slices, not str'),)
+19:11:55 - ERR - Login - (TypeError('list indices must be integers or slices, not str'),)
+19:22:19 - ERR - TokenValidate - ('Not enough segments',)

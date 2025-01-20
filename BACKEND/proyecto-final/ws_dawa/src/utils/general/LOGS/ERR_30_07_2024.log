@@ -1,0 +1,5 @@
+07:23:01 - ERR - TokenValidate - ('Not enough segments',)
+07:23:13 - ERR - TokenValidate - ('Not enough segments',)
+07:25:45 - ERR - getRecords - (OperationalError('connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n'),)
+07:27:07 - ERR - TokenValidate - ('Not enough segments',)
+07:27:30 - ERR - getRecords - (OperationalError('connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused\n\tIs the server running on that host and accepting TCP/IP connections?\n'),)
