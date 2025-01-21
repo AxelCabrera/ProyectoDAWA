@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+  backend:
+    container_name: backend_service
+    image: 'backend_image:latest'
+    restart: always
+    ports:
+      - '5000:5000'
+    volumes:
+      - c:/JCCR/data/LOGS/backend:/app/dawa/src/utils/general/LOGS
+    networks:
+      - app_network
+
+  frontend:
+    container_name: frontend_service
+    image: 'frontend_image:latest'
+    restart: always
+    ports:
+      - '3000:3000'
+    volumes:
+      - c:/JCCR/data/LOGS/frontend:/app/dawa/src/utils/general/LOGS
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
